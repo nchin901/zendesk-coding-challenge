@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html style ='background-color:#ff7b8f'>
+<head>
+<meta charset="UTF-8">
+<title>Zendesk Coding Challenge</title>
+<script>
+function sendData() {
+	
+}
+</script>
+</head>
+<body style= 'text-align:center' onload="hideDiv();">
+<h1 style= 'text-align:center;color:white'>Welcome to Zendesk!</h1>
+<h3 style= 'text-align:center;color:white'>Ticket Viewer Application</h3>
+
+<p>Please select an option.</p>
+<div style = 'width:30%;position:absolute;left:35%'>
+<button id ='tickets' onClick = "showOrHideDiv();">View All Tickets. Click Again to Hide.</button>
+</div>
+<br>
+<br>
+<br>
+<div id = "disp">
+<iframe src = 'display'></iframe>
+</div>
+<script>
+		function hideDiv() {
+			var v = document.getElementById("disp");
+			v.style.display = "none";
+		}
+		function showOrHideDiv(){
+			var x = document.getElementById('disp');
+			  if (x.style.display === 'none') {
+			    x.style.display = 'block';
+			  }else {
+				    x.style.display = 'none';
+			  }
+		}
+	</script>
+</body>
+</html>
